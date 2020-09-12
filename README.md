@@ -1,6 +1,6 @@
 # nuxt-sample
 
-> My perfect Nuxt.js project
+> Static site for a sample image.
 
 ## Build Setup
 
@@ -18,5 +18,11 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
+
+## Deploy
+
+### Netlify
+
+master branch push.
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
