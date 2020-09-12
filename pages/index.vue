@@ -3,6 +3,7 @@
     <div>
       <h1 class="title">Sample Image</h1>
       <h4 class="subtitle">6016x3760 (4.2MB)</h4>
+      <h6>{{ variable }}</h6>
       <sample-img />
     </div>
   </div>
@@ -14,6 +15,11 @@ import SampleImg from '~/components/SampleImg.vue'
 export default {
   components: {
     SampleImg
+  },
+  data () {
+    return {
+      variable: process.env.VARIABLE
+    }
   }
 }
 </script>

@@ -1,3 +1,5 @@
+require('dotenv').config()
+const VARIABLE = process.env.VARIABLE || ''
 
 export default {
   mode: 'universal',
@@ -50,5 +52,11 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  generate: {
+    fallback: true
+  },
+  env: {
+    VARIABLE,
   }
 }
