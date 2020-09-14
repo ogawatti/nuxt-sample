@@ -37,4 +37,6 @@ $ firebase deploy
 $ aws s3 sync ./dist s3://watti-nuxt-sample
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+### AWS AMplify
+
+master branch push.
