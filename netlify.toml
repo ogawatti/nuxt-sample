@@ -1,2 +1,4 @@
+[build]
+  functions = "dist/api"
 [build.environment]
   VARIABLE = "value"

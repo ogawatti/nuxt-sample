@@ -8,13 +8,16 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "serve": "netlify-lambda serve functions",
+    "build-api": "netlify-lambda build functions"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
     "bootstrap-vue": "^2.0.0",
     "dotenv": "^8.2.0",
     "firebase-tools": "^8.10.0",
+    "netlify-lambda": "^2.0.1",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {}
