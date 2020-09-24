@@ -11,8 +11,11 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# serve functions with hot reload at localhost:9000
+# serve netlify functions with hot reload at localhost:9000
 $ npm run serve
+
+# serve firebase functions at localhost:5001
+$ firebase emulators:start
 
 # build for production and launch server
 $ npm run build
@@ -40,6 +43,6 @@ $ firebase deploy
 $ aws s3 sync ./dist s3://watti-nuxt-sample
 ```
 
-### AWS AMplify
+### AWS Amplify
 
 master branch push.
