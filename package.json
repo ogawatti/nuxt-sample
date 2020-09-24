@@ -9,8 +9,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "serve": "netlify-lambda serve functions",
-    "build-api": "netlify-lambda build functions"
+    "serve": "netlify-lambda serve api",
+    "build-api": "netlify-lambda build api"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
