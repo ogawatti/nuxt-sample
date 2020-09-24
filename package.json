@@ -19,7 +19,8 @@
     "firebase-functions": "^3.11.0",
     "firebase-tools": "^8.10.0",
     "netlify-lambda": "^2.0.1",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "node-forge": ">=0.10.0"
   },
   "devDependencies": {}
 }
