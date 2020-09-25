@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/07403523-d261-41ad-870a-c02a3208aa8a/deploy-status)](https://app.netlify.com/sites/watti-nuxt-sample/deploys)
+
 # nuxt-sample
 
 > Static site for a sample image.
@@ -46,3 +48,13 @@ $ aws s3 sync ./dist s3://watti-nuxt-sample
 ### AWS Amplify
 
 master branch push.
+
+## Hosting URL
+
+| Enabled | Service      | URL |
+|---------|--------------|-----|
+| ○       | Netlify      | https://watti-nuxt-sample.netlify.app/ |
+| ○       | Firebase     | https://sample-image-8901e.web.app     |
+| ×       | AWS S3       | http://watti-nuxt-sample.s3-website-ap-northeast-1.amazonaws.com/ |
+| ×       | AWS Amplify  | https://master.d29jonr543ipnj.amplifyapp.com/ |
+| ○       | Github Pages | https://ogawatti.github.io/nuxt-sample/ |
