@@ -1,5 +1,6 @@
 require('dotenv').config()
 const VARIABLE = process.env.VARIABLE || ''
+const GOOGLE_ANALYTICS_TRACKING_ID = process.env.GOOGLE_ANALYTICS_TRACKING_ID
 
 export default {
   mode: 'universal',
@@ -42,6 +43,9 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    ['@nuxtjs/google-analytics', {
+      id: GOOGLE_ANALYTICS_TRACKING_ID
+    }],
   ],
   /*
   ** Build configuration
