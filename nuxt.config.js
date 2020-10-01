@@ -1,6 +1,7 @@
 require('dotenv').config()
 const VARIABLE = process.env.VARIABLE || ''
 const GOOGLE_ANALYTICS_TRACKING_ID = process.env.GOOGLE_ANALYTICS_TRACKING_ID
+const GOOGLE_TAG_MANAGER_ID = process.env.GOOGLE_TAG_MANAGER_ID
 
 export default {
   mode: 'universal',
@@ -46,6 +47,7 @@ export default {
     ['@nuxtjs/google-analytics', {
       id: GOOGLE_ANALYTICS_TRACKING_ID
     }],
+    '@nuxtjs/gtm',
   ],
   /*
   ** Build configuration
@@ -56,6 +58,10 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  gtm: {
+    enabled: true,
+    id: GOOGLE_TAG_MANAGER_ID,
   },
   generate: {
     fallback: true
