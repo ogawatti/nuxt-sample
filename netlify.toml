@@ -2,3 +2,5 @@
   functions = "dist/api"
 [build.environment]
   VARIABLE = "value"
+  GOOGLE_ANALYTICS_TRACKING_ID = "UA-179382356-1"
+  GOOGLE_TAG_MANAGER_ID = "GTM-TP8NDLC"
