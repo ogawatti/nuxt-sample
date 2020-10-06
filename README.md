@@ -51,10 +51,10 @@ master branch push.
 
 ## Hosting URL
 
-| Enabled | Service      | URL |
-|---------|--------------|-----|
-| ○       | Netlify      | https://watti-nuxt-sample.netlify.app/ |
-| ○       | Firebase     | https://sample-image-8901e.web.app     |
+| Enabled | Service      | URL                                                               |
+|---------|--------------|-------------------------------------------------------------------|
+| ○       | Netlify      | https://watti-nuxt-sample.netlify.app/                            |
+| ○       | Firebase     | https://sample-image-8901e.web.app                                |
 | ×       | AWS S3       | http://watti-nuxt-sample.s3-website-ap-northeast-1.amazonaws.com/ |
-| ×       | AWS Amplify  | https://master.d29jonr543ipnj.amplifyapp.com/ |
-| ○       | Github Pages | https://ogawatti.github.io/nuxt-sample/ |
+| ×       | AWS Amplify  | https://master.d29jonr543ipnj.amplifyapp.com/                     |
+| ○       | Github Pages | https://ogawatti.github.io/nuxt-sample/                           |
