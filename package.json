@@ -1,6 +1,6 @@
 {
   "name": "nuxt-sample",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "My perfect Nuxt.js project",
   "author": "ogawatti",
   "private": true,
@@ -10,7 +10,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "serve": "netlify-lambda serve api",
-    "build-api": "netlify-lambda build api"
+    "build-api": "netlify-lambda build api",
+    "release": "node bin/release.js"
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.4.0",
@@ -24,5 +25,8 @@
     "node-forge": ">=0.10.0",
     "nuxt": "^2.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@octokit/rest": "^18.0.6",
+    "readline-sync": "^1.4.10"
+  }
 }
