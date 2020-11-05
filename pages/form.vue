@@ -2,23 +2,25 @@
   <div class="container">
     <div>
       <h1 class="title">Sample Form</h1>
-      <form name="contact" method="POST" netlify>
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>   
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Subject: <input type="text" name="subject" /></label>   
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+      <client-only>
+        <form name="contact" method="POST" netlify>
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>Subject: <input type="text" name="subject" /></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </client-only>
     </div>
   </div>
 </template>
