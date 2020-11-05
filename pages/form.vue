@@ -18,6 +18,9 @@
             <label>Message: <textarea name="message"></textarea></label>
           </p>
           <p>
+            <label>Message2: <textarea name="message2"></textarea></label>
+          </p>
+          <p>
             <button type="submit">Send</button>
           </p>
         </form>
