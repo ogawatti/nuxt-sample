@@ -24,17 +24,7 @@
 </template>
 
 <script>
-import SampleImg from '~/components/SampleImg.vue'
-
 export default {
-  components: {
-    SampleImg
-  },
-  data () {
-    return {
-      variable: process.env.VARIABLE
-    }
-  }
 }
 </script>
 
