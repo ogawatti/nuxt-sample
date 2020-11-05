@@ -21,6 +21,9 @@
             <label>Message2: <textarea name="message2"></textarea></label>
           </p>
           <p>
+            <label>Message2b: <textarea name="message2b"></textarea></label>
+          </p>
+          <p>
             <button type="submit">Send</button>
           </p>
         </form>
