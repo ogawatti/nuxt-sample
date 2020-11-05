@@ -17,6 +17,9 @@
           <p>
             <label>Message: <textarea name="message"></textarea></label>
           </p>
+          <p style=display:none;>
+            <label>Message2: <textarea name="message2"></textarea></label>
+          </p>
           <p>
             <button type="submit">Send</button>
           </p>
