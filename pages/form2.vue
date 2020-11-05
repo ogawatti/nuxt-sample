@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title">Sample Form</h1>
-      <client-only>
+      <div>
         <form name="contact2" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact2">
           <p>
@@ -24,7 +24,7 @@
             <button type="submit">Send</button>
           </p>
         </form>
-      </client-only>
+      </div>
     </div>
   </div>
 </template>
