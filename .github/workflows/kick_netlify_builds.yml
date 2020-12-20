@@ -1,0 +1,10 @@
+name: Deploy microCMS resouces
+on:
+  repository_dispatch:
+    types: [dispatch_cms]
+
+jobs:
+  runs-on: ubuntu-latest
+  stesp:
+    - name: Kick Netlify build hook for master
+      run: curl -X POST -d {} https://api.netlify.com/build_hooks/5fdf50bb40dec14204da7acc
