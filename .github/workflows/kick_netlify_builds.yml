@@ -4,7 +4,9 @@ on:
     types: [dispatch_cms]
 
 jobs:
-  runs-on: ubuntu-latest
-  stesp:
-    - name: Kick Netlify build hook for master
-      run: curl -X POST -d {} https://api.netlify.com/build_hooks/5fdf50bb40dec14204da7acc
+  build:
+    name: Deploy to Netlify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kick Netlify build hook for master
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/5fdf50bb40dec14204da7acc
