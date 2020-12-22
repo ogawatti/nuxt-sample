@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     fetchNewsList () {
-      this.$store.dispatch('news/fetchList').then(this.setNewsList)
+      this.$store.dispatch('news/fetchContents').then(this.setNewsList)
     },
     setNewsList () {
       this.newsList = this.$store.state.news.contents

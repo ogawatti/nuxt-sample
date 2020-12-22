@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     fetchNews () {
-      this.$store.dispatch('news/fetch', this.$route.params.id).then(this.setNews)
+      this.$store.dispatch('news/fetchContent', this.$route.params.id).then(this.setNews)
     },
     setNews () {
       this.news = this.$store.state.news.content
