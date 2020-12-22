@@ -1,10 +1,13 @@
 require('dotenv').config()
-const VARIABLE = process.env.VARIABLE || ''
-const GOOGLE_ANALYTICS_TRACKING_ID = process.env.GOOGLE_ANALYTICS_TRACKING_ID
-const GOOGLE_TAG_MANAGER_ID = process.env.GOOGLE_TAG_MANAGER_ID
+const {
+  VARIABLE,
+  GOOGLE_ANALYTICS_TRACKING_ID,
+  GOOGLE_TAG_MANAGER_ID,
+  MICROCMS_BASE_URL,
+  MICROCMS_API_KEY
+} = process.env
 
 export default {
-  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -18,6 +21,16 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
+  },
+  target: 'static',
+  component: true,
+  privateRuntimeConfig: {
+    microcmsBaseUrl: MICROCMS_BASE_URL,
+    microcmsApiKey: MICROCMS_API_KEY,
+  },
+  publicRuntimeConfig: {
+    microcmsBaseUrl: process.env.NODE_ENV !== 'production' ? MICROCMS_BASE_URL : undefined,
+    microcmsApiKey: process.env.NODE_ENV !== 'production' ? MICROCMS_API_KEY : undefined
   },
   /*
   ** Customize the progress-bar color
@@ -42,6 +55,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     ['@nuxtjs/google-analytics', {
@@ -53,9 +68,7 @@ export default {
   ** Build configuration
   */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
+    cache: true,
     extend (config, ctx) {
     }
   },
@@ -67,6 +80,6 @@ export default {
     fallback: true
   },
   env: {
-    VARIABLE,
+    VARIABLE
   }
 }
