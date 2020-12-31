@@ -24,13 +24,9 @@ export default {
   },
   target: 'static',
   component: true,
-  privateRuntimeConfig: {
+  publicRuntimeConfig: {
     microcmsBaseUrl: MICROCMS_BASE_URL,
     microcmsApiKey: MICROCMS_API_KEY,
-  },
-  publicRuntimeConfig: {
-    microcmsBaseUrl: process.env.NODE_ENV !== 'production' ? MICROCMS_BASE_URL : undefined,
-    microcmsApiKey: process.env.NODE_ENV !== 'production' ? MICROCMS_API_KEY : undefined
   },
   /*
   ** Customize the progress-bar color
