@@ -10,7 +10,7 @@
           <label>Your Email: <input type="email" name="email" /></label>
         </p>
         <p>
-          <label>Subject: <input type="text" name="subject" /></label>
+          <label>Subject: <input type="text" name="_subject" /></label>
         </p>
         <p>
           <label>Message: <textarea name="message"></textarea></label>
