@@ -59,3 +59,10 @@ master branch push.
 | ×       | AWS S3       | http://watti-nuxt-sample.s3-website-ap-northeast-1.amazonaws.com/ |
 | ×       | AWS Amplify  | https://master.d29jonr543ipnj.amplifyapp.com/                     |
 | ○       | Github Pages | https://ogawatti.github.io/nuxt-sample/                           |
+
+## Form
+
+| Enabled | Service       |
+|---------|---------------|
+| ○       | Netlify Forms |
+| ○       | Formspree     |
