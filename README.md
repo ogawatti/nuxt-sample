@@ -29,7 +29,7 @@ $ npm run generate
 
 ## Deploy
 
-### Netlify
+### Netlify / Vercel
 
 master branch push.
 
@@ -54,7 +54,15 @@ master branch push.
 | Enabled | Service      | URL                                                               |
 |---------|--------------|-------------------------------------------------------------------|
 | ○       | Netlify      | https://watti-nuxt-sample.netlify.app/                            |
+| ○       | Vercel       | https://watti-nuxt-sample.vercel.app/                             |
 | ○       | Firebase     | https://sample-image-8901e.web.app                                |
 | ×       | AWS S3       | http://watti-nuxt-sample.s3-website-ap-northeast-1.amazonaws.com/ |
 | ×       | AWS Amplify  | https://master.d29jonr543ipnj.amplifyapp.com/                     |
 | ○       | Github Pages | https://ogawatti.github.io/nuxt-sample/                           |
+
+## Form
+
+| Enabled | Service       |
+|---------|---------------|
+| ○       | Netlify Forms |
+| ○       | Formspree     |

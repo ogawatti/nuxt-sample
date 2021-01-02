@@ -3,8 +3,6 @@ const {
   VARIABLE,
   GOOGLE_ANALYTICS_TRACKING_ID,
   GOOGLE_TAG_MANAGER_ID,
-  MICROCMS_BASE_URL,
-  MICROCMS_API_KEY
 } = process.env
 
 export default {
@@ -25,8 +23,9 @@ export default {
   target: 'static',
   component: true,
   publicRuntimeConfig: {
-    microcmsBaseUrl: MICROCMS_BASE_URL,
-    microcmsApiKey: MICROCMS_API_KEY,
+    microcmsBaseUrl: process.env.MICROCMS_BASE_URL,
+    microcmsApiKey: process.env.MICROCMS_API_KEY,
+    formEndpoint: process.env.FORMSPREE_ENDPOINT
   },
   /*
   ** Customize the progress-bar color
