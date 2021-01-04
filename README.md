@@ -29,7 +29,7 @@ $ npm run generate
 
 ## Deploy
 
-### Netlify / Vercel
+### Netlify / Vercel / AWS Amplify
 
 master branch push.
 
@@ -44,10 +44,6 @@ $ firebase deploy
 ```
 $ aws s3 sync ./dist s3://watti-nuxt-sample
 ```
-
-### AWS Amplify
-
-master branch push.
 
 ## Hosting URL
 
@@ -66,3 +62,4 @@ master branch push.
 |---------|---------------|
 | ○       | Netlify Forms |
 | ○       | Formspree     |
+
