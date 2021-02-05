@@ -2,6 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title">Sample Form</h1>
+      <h4 class="subtitle">Netlify</h4>
       <client-only>
         <form name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact">

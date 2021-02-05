@@ -1,5 +1,26 @@
 <template>
   <div>
+    <div>
+      <b-navbar type="light" variant="light">
+        <b-navbar-brand><nuxt-link to="/">Top</nuxt-link></b-navbar-brand>
+        <b-collapse id="nav-collapse" is-nav>
+          <b-nav>
+            <b-nav-item>
+              <nuxt-link to="/news">News</nuxt-link>
+            </b-nav-item>
+            <b-nav-item>
+              <nuxt-link to="/form">Form (Netlify)</nuxt-link>
+            </b-nav-item>
+            <b-nav-item>
+              <nuxt-link to="/form2">Form (Formspree)</nuxt-link>
+            </b-nav-item>
+            <b-nav-item>
+              <nuxt-link to="/links">Links</nuxt-link>
+            </b-nav-item>
+          </b-nav>
+        </b-collapse>
+      </b-navbar>
+    </div>
     <nuxt />
   </div>
 </template>

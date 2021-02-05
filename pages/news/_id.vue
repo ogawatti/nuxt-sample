@@ -1,9 +1,6 @@
 <template>
   <div class="news">
-    <h2>
-      <nuxt-link to="/news">News</nuxt-link>
-    </h2>
-    <h3>{{ news.title }}</h3>
+    <h2>{{ news.title }}</h2>
     <b-badge v-for="(label, i) in news.labels" :key="i" :variant="label.color[0]">
       {{ label.id }}
     </b-badge>
