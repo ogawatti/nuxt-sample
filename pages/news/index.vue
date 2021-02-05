@@ -9,7 +9,7 @@
         class="news-link"
       >
         <nuxt-link :to="`news/${news.id}`">
-          {{ news.title }}
+          {{ news.title }} ({{ news.id }})
         </nuxt-link>
       </li>
     </ul>
