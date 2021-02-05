@@ -5,6 +5,8 @@ const {
   GOOGLE_TAG_MANAGER_ID,
 } = process.env
 
+const axiosBase = require('axios')
+
 export default {
   /*
   ** Headers of the page
@@ -73,7 +75,17 @@ export default {
     id: GOOGLE_TAG_MANAGER_ID,
   },
   generate: {
-    fallback: true
+    fallback: true,
+    routes () {
+      const axios = axiosBase.create({
+        baseURL: process.env.MICROCMS_BASE_URL,
+        headers: { 'X-API-KEY': process.env.MICROCMS_API_KEY }
+      })
+
+      return axios.get('/news?fields=id').then(res => {
+        return res.data.contents.map(news => `news/${news.id}`)
+      })
+    }
   },
   env: {
     VARIABLE
