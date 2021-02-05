@@ -8,7 +8,7 @@
         :key="i"
         class="news-link"
       >
-        <nuxt-link :to="`news/${news.id}`">
+        <nuxt-link :to="{ name: 'news-id', params: { id: news.id } }">
           {{ news.title }} ({{ news.id }})
         </nuxt-link>
       </li>
