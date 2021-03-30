@@ -9,10 +9,10 @@
               <nuxt-link to="/news">News</nuxt-link>
             </b-nav-item>
             <b-nav-item>
-              <a href="/hello">Hello</a>
+              <a href="/hello" @click="onProxyLink('/hello')">Hello</a>
             </b-nav-item>
             <b-nav-item>
-              <a href="/blog/20210330">Blog</a>
+              <a href="/blog/20210330" @click="onProxyLink('/blog/20210330')">Blog</a>
             </b-nav-item>
             <b-nav-item>
               <nuxt-link to="/form">Form (Netlify)</nuxt-link>
@@ -80,3 +80,13 @@ html {
   background-color: #35495e;
 }
 </style>
+
+<script>
+export default {
+  methods: {
+    onProxyLink (path) {
+      window.location.href = 'https://ogawatti.net' + path
+    }
+  }
+}
+</script>
