@@ -12,6 +12,9 @@
               <a href="/hello">Hello</a>
             </b-nav-item>
             <b-nav-item>
+              <a href="/blog/20210330">Blog</a>
+            </b-nav-item>
+            <b-nav-item>
               <nuxt-link to="/form">Form (Netlify)</nuxt-link>
             </b-nav-item>
             <b-nav-item>

@@ -1,1 +1,2 @@
 /hello https://watti-nuxt-sample2.netlify.app/ 200!
+/blog/* https://watti-weebflow-sample.webflow.io/blog/:splat 200!
