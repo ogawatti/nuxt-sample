@@ -4,7 +4,7 @@
 
     <client-only>
       <p>
-        {{ videoPageUrl }}
+        <a :href="videoPageUrl">{{ videoPageUrl }}</a>
       </p>
     </client-only>
   </div>
