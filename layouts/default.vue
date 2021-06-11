@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div v-if="!$route.path.match(/\/videos/)">
       <b-navbar type="light" variant="light">
         <b-navbar-brand><nuxt-link to="/">Top</nuxt-link></b-navbar-brand>
         <b-collapse id="nav-collapse" is-nav>
@@ -83,6 +83,10 @@ html {
 
 <script>
 export default {
+  created () {
+    console.log('-------------------')
+    console.log(this.$route.path)
+  },
   methods: {
     onProxyLink (path) {
       window.location.href = 'https://ogawatti.net' + path
