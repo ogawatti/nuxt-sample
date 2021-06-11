@@ -28,8 +28,8 @@ export default {
     microcmsBaseUrl: process.env.MICROCMS_BASE_URL,
     microcmsApiKey: process.env.MICROCMS_API_KEY,
     formEndpoint: process.env.FORMSPREE_ENDPOINT,
-    videoHost: 'wattidev.s3.ap-northeast-1.amazonaws.com',
-    videoPath: '/test/test.mp4'
+    videoHost: process.env.VIDEO_HOST,
+    videoPath: process.env.VIDEO_PATH
   },
   /*
   ** Customize the progress-bar color

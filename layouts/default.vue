@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="!$route.path.match(/\/videos/)">
+    <div v-if="enabledHeader">
       <b-navbar type="light" variant="light">
         <b-navbar-brand><nuxt-link to="/">Top</nuxt-link></b-navbar-brand>
         <b-collapse id="nav-collapse" is-nav>
@@ -83,9 +83,10 @@ html {
 
 <script>
 export default {
-  created () {
-    console.log('-------------------')
-    console.log(this.$route.path)
+  computed: {
+    enabledHeader () {
+      return !this.$route.path.match(/^\/video/)
+    }
   },
   methods: {
     onProxyLink (path) {
