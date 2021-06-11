@@ -14,7 +14,7 @@ export default {
   },
   computed: {
     videoBaseUrl () {
-      return this.$route.query.src
+      return `https://${this.$config.videoHost}${this.$config.videoPath}`
     },
     videoXAmzQueryString () {
       return Object.keys(this.$route.query)
@@ -23,7 +23,7 @@ export default {
                    .join('&')
     },
     videoUrl () {
-      return [this.videoBaseUrl, this.videoXAmzQueryString].join('&')
+      return [this.videoBaseUrl, this.videoXAmzQueryString].join('?')
     }
   }
 }
