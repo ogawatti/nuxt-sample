@@ -18,9 +18,11 @@ export default {
   mixins: [XAmzQuery],
   computed: {
     videoPageBaseUrl () {
-      return process.env.NODE_ENV === 'development'
-        ? 'https://ogawatti.net/video/'
-        : `https://${location.host}/video/`
+      return process.client
+        ? process.env.NODE_ENV === 'development'
+          ? 'https://ogawatti.net/video/'
+          : `https://${location.host}/video/`
+        : ''
     },
     videoPageUrl () {
       return [this.videoPageBaseUrl, this.xAmzQueryString].join('?')

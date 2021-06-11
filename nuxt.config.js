@@ -78,6 +78,10 @@ export default {
   },
   generate: {
     fallback: true,
+    exclude: [
+      /^\/hello/,
+      /^\/blog\/.+/
+    ],
     routes () {
       const axios = axiosBase.create({
         baseURL: process.env.MICROCMS_BASE_URL,
