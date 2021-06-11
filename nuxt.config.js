@@ -27,7 +27,9 @@ export default {
   publicRuntimeConfig: {
     microcmsBaseUrl: process.env.MICROCMS_BASE_URL,
     microcmsApiKey: process.env.MICROCMS_API_KEY,
-    formEndpoint: process.env.FORMSPREE_ENDPOINT
+    formEndpoint: process.env.FORMSPREE_ENDPOINT,
+    videoHost: process.env.VIDEO_HOST,
+    videoPath: process.env.VIDEO_PATH
   },
   /*
   ** Customize the progress-bar color
@@ -76,6 +78,10 @@ export default {
   },
   generate: {
     fallback: true,
+    exclude: [
+      /^\/hello/,
+      /^\/blog\/.+/
+    ],
     routes () {
       const axios = axiosBase.create({
         baseURL: process.env.MICROCMS_BASE_URL,

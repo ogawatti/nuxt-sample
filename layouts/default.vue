@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div v-if="enabledHeader">
       <b-navbar type="light" variant="light">
         <b-navbar-brand><nuxt-link to="/">Top</nuxt-link></b-navbar-brand>
         <b-collapse id="nav-collapse" is-nav>
@@ -83,6 +83,11 @@ html {
 
 <script>
 export default {
+  computed: {
+    enabledHeader () {
+      return !this.$route.path.match(/^\/video/)
+    }
+  },
   methods: {
     onProxyLink (path) {
       window.location.href = 'https://ogawatti.net' + path
