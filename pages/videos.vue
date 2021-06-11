@@ -1,7 +1,7 @@
 <template>
   <div class="presigned">
     <client-only>
-      <video :src="videoUrl" controls width="800" />
+      <video :src="videoUrl" controls width="400" playsinline />
     </client-only>
   </div>
 </template>
