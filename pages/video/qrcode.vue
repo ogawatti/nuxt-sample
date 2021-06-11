@@ -19,8 +19,8 @@ export default {
   computed: {
     videoPageBaseUrl () {
       return process.env.NODE_ENV === 'development'
-        ? 'https://ogawatti.net/videos/'
-        : `https://${location.host}/videos/`
+        ? 'https://ogawatti.net/video/'
+        : `https://${location.host}/video/`
     },
     videoPageUrl () {
       return [this.videoPageBaseUrl, this.xAmzQueryString].join('?')
