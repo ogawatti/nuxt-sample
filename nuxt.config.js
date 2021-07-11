@@ -25,7 +25,9 @@ export default {
   publicRuntimeConfig: {
     microcmsBaseUrl: process.env.MICROCMS_BASE_URL,
     microcmsApiKey: process.env.MICROCMS_API_KEY,
-    formEndpoint: process.env.FORMSPREE_ENDPOINT
+    formEndpoint: process.env.FORMSPREE_ENDPOINT,
+    uriApiName: process.env.URI_API_NAME,
+    uriApiPath: process.env.URI_API_PATH
   },
   /*
   ** Customize the progress-bar color
@@ -40,6 +42,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/amplify.js', ssr: false },
     { src:  '~plugins/api', ssr: false }
   ],
   /*
